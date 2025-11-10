@@ -26,8 +26,10 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-6 md:space-y-0">
           <div className="text-gray-600 dark:text-gray-400">
-            <Logo variant="monochrome" className="h-20 w-auto mx-auto md:mx-0" />
-            <p className="mt-2 text-gray-500 dark:text-gray-400">Haria L G Rotary Hospital, Vapi</p>
+            <Logo 
+              className="h-24 w-auto mx-auto md:mx-0" 
+              extraLine="Haria L G Rotary Hospital, Vapi"
+            />
           </div>
           <div className="flex justify-center space-x-6">
             <a href="#" className="text-gray-400 hover:text-brand-primary dark:hover:text-brand-primary"><FacebookIcon /></a>
