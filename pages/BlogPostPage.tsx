@@ -62,7 +62,7 @@ const BlogPostPage: React.FC = () => {
 
   return (
     <div className="py-16 lg:py-24 bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <AnimatedSection>
           <div className="max-w-4xl mx-auto">
             <article>
@@ -76,7 +76,7 @@ const BlogPostPage: React.FC = () => {
                 </p>
               </header>
 
-              <img src={post.featuredImage} alt={post.title} className="w-full h-auto max-h-[500px] object-cover rounded-xl shadow-lg mb-12" />
+              <img src={post.featuredImage} alt={post.title} loading="lazy" className="w-full h-auto max-h-[500px] object-cover rounded-xl shadow-lg mb-12" />
 
               <div className="prose prose-lg max-w-none mx-auto text-gray-700 leading-relaxed dark:prose-invert">
                 {post.content.map((paragraph, index) => (

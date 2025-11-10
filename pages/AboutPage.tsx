@@ -4,7 +4,7 @@ import AnimatedSection from '../components/AnimatedSection';
 const AboutPage: React.FC = () => {
   return (
     <div className="bg-white dark:bg-gray-900 py-16 lg:py-24">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <AnimatedSection>
           <div className="text-center mb-12">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 dark:text-gray-200">About Dr. Neha Bhatnagar</h1>
@@ -16,7 +16,7 @@ const AboutPage: React.FC = () => {
           <AnimatedSection className="lg:col-span-2" delay={0.3}>
             <div className="relative">
                 <div className="absolute -top-4 -left-4 w-full h-full bg-brand-pink dark:bg-brand-primary/20 rounded-xl transform rotate-[-3deg]"></div>
-                <img src="https://picsum.photos/seed/doctor-profile/800/1000" alt="Dr. Neha Bhatnagar" className="relative rounded-xl shadow-2xl w-full" />
+                <img src="https://picsum.photos/seed/doctor-profile/800/1000" alt="Dr. Neha Bhatnagar" loading="lazy" className="relative rounded-xl shadow-2xl w-full" />
             </div>
           </AnimatedSection>
           

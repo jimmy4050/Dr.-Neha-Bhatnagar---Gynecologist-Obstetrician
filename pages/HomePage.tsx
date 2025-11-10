@@ -31,18 +31,18 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <div
-        className="relative w-full h-[80vh] md:h-screen bg-cover bg-center text-white"
+        className="relative w-full h-[75vh] md:h-screen bg-cover bg-center text-white"
         style={{ backgroundImage: "url('https://picsum.photos/seed/herobanner/1920/1080')" }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
-        <div className="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center items-start">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 h-full flex flex-col justify-center items-start">
             <motion.div
                 className="max-w-2xl"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
             >
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4" style={{textShadow: '2px 2px 8px rgba(0,0,0,0.6)'}}>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4" style={{textShadow: '2px 2px 8px rgba(0,0,0,0.6)'}}>
                     Compassionate Women’s Healthcare <br /> with Expertise & Care.
                 </h1>
                 <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-lg" style={{textShadow: '1px 1px 4px rgba(0,0,0,0.6)'}}>
@@ -66,7 +66,7 @@ const HomePage: React.FC = () => {
       </div>
 
       <AnimatedSection className="py-16 bg-gray-50 dark:bg-gray-900">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {infoCards.map((card, index) => (
               <InfoCard key={index} {...card} />
@@ -76,7 +76,7 @@ const HomePage: React.FC = () => {
       </AnimatedSection>
       
       <AnimatedSection className="py-16 lg:py-24 bg-white dark:bg-gray-800">
-        <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">About Dr. Neha Bhatnagar</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">Dr. Neha Bhatnagar (MBBS, DGO) is a leading Gynecologist and Obstetrician at Haria L G Rotary Hospital, Vapi. She specializes in women’s health, high-risk pregnancy, infertility care, and laparoscopic procedures.</p>
@@ -86,13 +86,13 @@ const HomePage: React.FC = () => {
                 </Link>
             </div>
             <div className="order-1 lg:order-2">
-                <img src="https://picsum.photos/seed/doctor/600/600" alt="Dr. Neha Bhatnagar" className="rounded-full shadow-2xl dark:shadow-brand-primary/20 mx-auto w-3/4 lg:w-full" />
+                <img src="https://picsum.photos/seed/doctor/600/600" alt="Dr. Neha Bhatnagar" loading="lazy" className="rounded-full shadow-2xl dark:shadow-brand-primary/20 mx-auto w-3/4 lg:w-full" />
             </div>
         </div>
       </AnimatedSection>
 
       <AnimatedSection className="py-16 lg:py-24 bg-brand-pink/30 dark:bg-pink-900/20">
-        <div className="container mx-auto px-6 text-center">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">Our Services</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12">We offer a comprehensive range of services to support women's health from adolescence to menopause and beyond.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

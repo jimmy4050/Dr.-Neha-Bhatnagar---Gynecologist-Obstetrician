@@ -49,9 +49,9 @@ const Header: React.FC = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-shadow duration-300 bg-white dark:bg-gray-900 ${isScrolled ? 'shadow-lg' : 'shadow-none'}`}>
-      <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <nav className="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
         <Link to="/" className="flex-shrink-0">
-          <Logo className="h-14 w-auto" />
+          <Logo className="h-12 sm:h-14 w-auto" />
         </Link>
         <div className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link) => (

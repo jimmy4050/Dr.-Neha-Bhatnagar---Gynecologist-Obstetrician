@@ -7,7 +7,7 @@ const BlogCard: React.FC<{ post: BlogPost }> = ({ post }) => {
   return (
     <Link to={`/blog/${post.slug}`} className="group block bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
       <div className="relative">
-        <img src={post.featuredImage} alt={post.title} className="w-full h-56 object-cover" />
+        <img src={post.featuredImage} alt={post.title} loading="lazy" className="w-full h-56 object-cover" />
         <div className="absolute top-4 left-4 bg-brand-primary text-white text-xs font-semibold px-3 py-1 rounded-full">{post.category}</div>
       </div>
       <div className="p-6">
@@ -24,7 +24,7 @@ const BlogCard: React.FC<{ post: BlogPost }> = ({ post }) => {
 const BlogListPage: React.FC = () => {
   return (
     <div className="py-16 lg:py-24 bg-gray-50 dark:bg-gray-900">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <AnimatedSection>
           <div className="text-center mb-12">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 dark:text-gray-200">Articles & Insights</h1>

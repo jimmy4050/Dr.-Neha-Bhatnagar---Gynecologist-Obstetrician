@@ -45,7 +45,7 @@ const AppointmentPage: React.FC = () => {
 
   return (
     <div className="py-16 lg:py-24 bg-brand-blue/20 dark:bg-blue-900/20">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <AnimatedSection>
           <div className="max-w-3xl mx-auto">
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl p-8 md:p-12">

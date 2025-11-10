@@ -7,7 +7,7 @@ const AccordionItem: React.FC<{ title: string; children: React.ReactNode; isOpen
     <div className="border-b border-gray-200 dark:border-gray-700">
       <button
         onClick={onClick}
-        className="w-full flex justify-between items-center text-left py-5 px-6 text-lg font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50"
+        className="w-full flex justify-between items-center text-left py-5 px-4 sm:px-6 text-lg font-semibold text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700/50"
       >
         <span>{title}</span>
         <motion.div animate={{ rotate: isOpen ? 180 : 0 }}>
@@ -27,7 +27,7 @@ const AccordionItem: React.FC<{ title: string; children: React.ReactNode; isOpen
             transition={{ duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }}
             className="overflow-hidden"
           >
-            <div className="px-6 pb-5 text-gray-600 dark:text-gray-400 leading-relaxed">
+            <div className="px-4 sm:px-6 pb-5 text-gray-600 dark:text-gray-400 leading-relaxed">
               {children}
             </div>
           </motion.div>
@@ -102,7 +102,7 @@ const PatientGuidePage: React.FC = () => {
 
   return (
     <div className="py-16 lg:py-24 bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <AnimatedSection>
           <div className="text-center mb-12">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 dark:text-gray-200">Patient Guide</h1>
