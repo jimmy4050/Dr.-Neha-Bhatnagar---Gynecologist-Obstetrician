@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Dr. Neha Bhatnagar | Gynecologist & Obstetrician | Haria L G Rotary Hospital, Vapi</title>
+    <meta name="description" content="Dr. Neha Bhatnagar (MBBS, DGO) is a leading Gynecologist and Obstetrician in Vapi, specializing in women’s health, high-risk pregnancy, infertility care, and laparoscopic procedures at Haria L G Rotary Hospital." />
+    <meta name="keywords" content="Gynecologist in Vapi, Obstetrician in Vapi, Dr. Neha Bhatnagar, Haria Rotary Hospital, Women's Health, Pregnancy Care, Infertility Treatment, Laparoscopic Surgery" />
+
+    <!-- OpenGraph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Dr. Neha Bhatnagar | Gynecologist & Obstetrician | Haria L G Rotary Hospital, Vapi" />
+    <meta property="og:description" content="Compassionate and expert care for women at every stage of life. Specializing in pregnancy, infertility, and gynecological wellness." />
+    <meta property="og:image" content="https://picsum.photos/seed/ogimage/1200/630" />
+    <meta property="og:url" content="https://drnehabhatnagar.example.com" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='50' fill='%23FADADD'/%3e%3cpath fill='%23E4C7F7' d='M62 45 C 62 38, 57 32, 50 32 C 43 32, 38 38, 38 45 C 38 52, 43 65, 50 65 C 57 65, 62 52, 62 45 Z M50 68 C 45 68, 42 75, 42 80 C 42 85, 45 88, 50 88 C 55 88, 58 85, 58 80 C 58 75, 55 68, 50 68 Z M50 30 C 54 30, 56 26, 56 23 C 56 20, 54 18, 50 18 C 46 18, 44 20, 44 23 C 44 26, 46 30, 50 30 Z' transform='translate(0 5)'/%3e%3c/svg%3e">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Enable class-based dark mode
+        theme: {
+          extend: {
+            colors: {
+              'brand-pink': '#FCE7F3', // light pink
+              'brand-purple': '#E9D5FF', // lavender
+              'brand-blue': '#DBEAFE', // sky blue
+              'brand-primary': '#EC4899', // A stronger pink for CTAs
+              'brand-secondary': '#8B5CF6', // A stronger purple
+              'brand-text': '#374151',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Script to prevent FOUC (Flash of Unstyled Content) for dark mode -->
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+    
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
