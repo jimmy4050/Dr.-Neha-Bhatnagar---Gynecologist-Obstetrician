@@ -79,7 +79,7 @@ const HomePage: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">About Dr. Neha Bhatnagar</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">Dr. Neha Bhatnagar (MBBS, DGO) is a leading Gynecologist and Obstetrician at Haria L G Rotary Hospital, Vapi. She specializes in women’s health, high-risk pregnancy, infertility care, and laparoscopic procedures.</p>
+                <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">Dr. Neha Bhatnagar (M.B.B.S., M.S. OBGY, FMAS) is a leading Gynecologist and Obstetrician at Haria L G Rotary Hospital, Vapi. She specializes in women’s health, high-risk pregnancy, infertility care, and advanced procedures including Cosmetic & Uro-Gynecology.</p>
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 italic border-l-4 border-brand-primary pl-4">“Every woman deserves trusted care at every stage of life.”</p>
                 <Link to="/about" className="bg-brand-secondary text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-500 transition-all duration-300 shadow-md">
                     Learn More
